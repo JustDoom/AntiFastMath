@@ -1,0 +1,5 @@
+{
+  "entrypoint": "org.abyssmc.antifastmath.AntiFastMath",
+  "name": "AntiFastMath",
+  "version": "1.0.0"
+}

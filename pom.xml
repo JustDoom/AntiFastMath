@@ -54,21 +54,48 @@
 
     <repositories>
         <repository>
-            <id>papermc-repo</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
+
         <repository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
+            <id>Minecraft.net</id>
+            <url>https://libraries.minecraft.net</url>
+        </repository>
+
+        <repository>
+            <id>Sponge</id>
+            <url>https://repo.spongepowered.org/maven</url>
+        </repository>
+
+        <repository>
+            <id>Velocity</id>
+            <url>https://repo.velocitypowered.com/snapshots/</url>
+        </repository>
+
+        <repository>
+            <id>minestom</id>
+            <url>https://repo.minestom.com/repository/maven-public/</url>
         </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>com.destroystokyo.paper</groupId>
-            <artifactId>paper-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <groupId>com.github.Minestom</groupId>
+            <artifactId>Minestom</artifactId>
+            <version>463a46ccc0</version>
             <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.jboss.shrinkwrap.resolver</groupId>
+                    <artifactId>shrinkwrap-resolver-depchain</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.spongepowered</groupId>
+            <artifactId>configurate-yaml</artifactId>
+            <version>4.1.1</version>
         </dependency>
     </dependencies>
 </project>
